@@ -6,7 +6,7 @@
 
 Use the default credentials for the GCP SDK: https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to
 
-Configure GCLOUD_BUCKET_NAME to specify the bucket to migrate from.
+Configure `GCLOUD_BUCKET_NAME` to specify the bucket to migrate from.
 
 ### S3
 
