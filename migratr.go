@@ -45,7 +45,7 @@ func main() {
 
 func createS3Client() (*minio.Client, error) {
 	endpoint := os.Getenv("S3_ENDPOINT")
-	accessKeyID := os.Getenv("S3_SECRET_KEY")
+	accessKeyID := os.Getenv("S3_ACCESS_KEY_ID")
 	secretAccessKey := os.Getenv("S3_SECRET_ACCESS_KEY")
 
 	return minio.New(endpoint, &minio.Options{
