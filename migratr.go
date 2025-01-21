@@ -19,7 +19,8 @@ import (
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Println("Error loading .env file: ", err)
+		log.Println("Using environment variables instead")
 	}
 
 	s3BucketName := os.Getenv("S3_BUCKET_NAME")
